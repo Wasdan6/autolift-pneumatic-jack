@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AutoLift Pneumatic Jack | 8-Ton Automated Vehicle Lifting</title>
+  <meta name="description" content="AutoLift Pneumatic Jack is an 8-ton compressed-air vehicle lifting solution designed for garages, automotive service stations, tire shops, and professional mechanics.">
+  <meta name="keywords" content="pneumatic jack, air jack, 8 ton jack, automated bottle jack, automotive lifting equipment, vehicle jack, garage equipment, pneumatic vehicle lift">
+
+  <meta property="og:title" content="AutoLift Pneumatic Jack | 8-Ton Vehicle Lifting">
+  <meta property="og:description" content="A compressed-air-powered 8-ton pneumatic jack designed for professional automotive service environments.">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --dark: #0b1220;
+      --dark2: #111c30;
+      --blue: #1d67d9;
+      --blue2: #0ea5e9;
+      --light: #f4f7fb;
+      --text: #182235;
+      --muted: #64748b;
+      --white: #ffffff;
+      --border: #dbe3ee;
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: auto;
+    }
+
+    header {
+      background: var(--dark);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: .3px;
+    }
+
+    .logo span { color: #4db3ff; }
+
+    nav {
+      display: flex;
+      gap: 24px;
+      font-size: .95rem;
+    }
+
+    nav a { color: #dce8f7; }
+    nav a:hover { color: white; }
+
+    .hero {
+      color: white;
+      background:
+        radial-gradient(circle at 85% 20%, rgba(14,165,233,.28), transparent 35%),
+        linear-gradient(135deg, #08111f, #153766 65%, #0b6ab5);
+      padding: 92px 0 85px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.18);
+      padding: 7px 13px;
+      border-radius: 30px;
+      font-size: .82rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 5vw, 4.3rem);
+      line-height: 1.06;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      color: #d7e5f6;
+      font-size: 1.12rem;
+      max-width: 680px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 21px;
+      border-radius: 8px;
+      font-weight: 700;
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: white;
+      color: #0d4f9b;
+    }
+
+    .btn-secondary {
+      color: white;
+      border-color: rgba(255,255,255,.35);
+      background: rgba(255,255,255,.05);
+    }
+
+    .product-card {
+      background: rgba(255,255,255,.09);
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 18px;
+      padding: 30px;
+      backdrop-filter: blur(7px);
+    }
+
+    .product-visual {
+      min-height: 270px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      background: rgba(0,0,0,.18);
+      margin-bottom: 22px;
+      text-align: center;
+      color: #bcd2eb;
+    }
+
+    .product-visual strong {
+      display: block;
+      color: white;
+      font-size: 2rem;
+    }
+
+    .product-card ul {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+      color: #dce8f7;
+    }
+
+    section { padding: 78px 0; }
+
+    .section-head {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 42px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(1.9rem, 4vw, 2.7rem);
+      margin-bottom: 12px;
+    }
+
+    .section-head p { color: var(--muted); }
+
+    .light { background: var(--light); }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      padding: 27px;
+      background: white;
+    }
+
+    .card h3 { margin-bottom: 9px; }
+    .card p { color: var(--muted); }
+
+    .icon {
+      width: 45px;
+      height: 45px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      background: #e6f1ff;
+      color: #1463b9;
+      font-weight: 900;
+      margin-bottom: 17px;
+    }
+
+    .spec-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      overflow: hidden;
+      max-width: 820px;
+      margin: auto;
+    }
+
+    .spec {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 17px 21px;
+      border-bottom: 1px solid var(--border);
+      background: white;
+    }
+
+    .spec:nth-child(odd) { border-right: 1px solid var(--border); }
+    .spec:nth-last-child(-n+2) { border-bottom: 0; }
+    .spec span:first-child { color: var(--muted); }
+    .spec strong { text-align: right; }
+
+    .application-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .application {
+      padding: 22px;
+      border-radius: 12px;
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #0b1220, #125fa7);
+      color: white;
+      text-align: center;
+    }
+
+    .cta p {
+      color: #d7e5f6;
+      max-width: 680px;
+      margin: 12px auto 25px;
+    }
+
+    form {
+      max-width: 650px;
+      margin: 28px auto 0;
+      display: grid;
+      gap: 13px;
+      text-align: left;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 14px 15px;
+      border: 1px solid #cbd6e5;
+      border-radius: 8px;
+      font: inherit;
+    }
+
+    textarea { min-height: 130px; resize: vertical; }
+
+    footer {
+      background: #070d17;
+      color: #9fb0c4;
+      padding: 28px 0;
+      font-size: .9rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 850px) {
+      .hero-grid, .grid-3 { grid-template-columns: 1fr; }
+      .application-list { grid-template-columns: repeat(2, 1fr); }
+      nav { display: none; }
+    }
+
+    @media (max-width: 560px) {
+      .spec-grid { grid-template-columns: 1fr; }
+      .spec:nth-child(odd) { border-right: 0; }
+      .spec:nth-last-child(-n+2) { border-bottom: 1px solid var(--border); }
+      .spec:last-child { border-bottom: 0; }
+      .application-list { grid-template-columns: 1fr; }
+      section { padding: 58px 0; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#">Auto<span>Lift</span></a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#specifications">Specifications</a>
+      <a href="#applications">Applications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="container hero-grid">
+
+      <div>
+        <div class="eyebrow">AUTOMOTIVE LIFTING EQUIPMENT</div>
+        <h1>Powerful Vehicle Lifting. Powered by Air.</h1>
+        <p>
+          AutoLift Pneumatic Jack is an 8-ton compressed-air-powered vehicle
+          lifting solution designed for garages, automotive service stations,
+          tire shops, and professional mechanics.
+        </p>
+
+        <div class="buttons">
+          <a class="btn btn-primary" href="#contact">Request Information</a>
+          <a class="btn btn-secondary" href="#specifications">View Specifications</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-visual">
+          <div>
+            <strong>8 TON</strong>
+            Pneumatic Vehicle Jack<br>
+            <small>Product image / CAD render can be placed here</small>
+          </div>
+        </div>
+
+        <ul>
+          <li>✓ Compressed-air powered</li>
+          <li>✓ Automated pneumatic control</li>
+          <li>✓ Designed for automotive service</li>
+          <li>✓ Target height: 400 mm</li>
+          <li>✓ Target width: 150 mm</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="container">
+      <div class="section-head">
+        <h2>Built for Faster, Easier Vehicle Service</h2>
+        <p>
+          AutoLift combines pneumatic actuation with automated control to
+          reduce manual effort during vehicle lifting operations.
+        </p>
+      </div>
+
+      <div class="grid-3">
+
+        <article class="card">
+          <div class="icon">8T</div>
+          <h3>8-Ton Target Capacity</h3>
+          <p>
+            Designed around an 8-ton lifting-capacity target for demanding
+            automotive service applications.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon">AIR</div>
+          <h3>Pneumatic Power</h3>
+          <p>
+            Uses compressed air and a pneumatic cylinder instead of a
+            conventional manually operated hydraulic pumping mechanism.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon">ON</div>
+          <h3>Automated Control</h3>
+          <p>
+            An electrical switch and solenoid valve are intended to provide
+            convenient control of the pneumatic lifting system.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="specifications" class="light">
+    <div class="container">
+      <div class="section-head">
+        <h2>Product Specifications</h2>
+        <p>
+          Key target specifications for the AutoLift pneumatic jack concept.
+          Final operating pressure, cylinder dimensions, and certified load
+          performance must be established through engineering validation.
+        </p>
+      </div>
+
+      <div class="spec-grid">
+        <div class="spec"><span>Product</span><strong>AutoLift Pneumatic Jack</strong></div>
+        <div class="spec"><span>Target capacity</span><strong>8 tons</strong></div>
+        <div class="spec"><span>Target height</span><strong>400 mm</strong></div>
+        <div class="spec"><span>Target width</span><strong>150 mm</strong></div>
+        <div class="spec"><span>Power source</span><strong>Compressed air</strong></div>
+        <div class="spec"><span>Actuator</span><strong>Pneumatic cylinder</strong></div>
+        <div class="spec"><span>Control</span><strong>Electrical switch + solenoid valve</strong></div>
+        <div class="spec"><span>Primary market</span><strong>Automotive service</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <h2>Why AutoLift?</h2>
+        <p>
+          A pneumatic approach can provide a convenient alternative for
+          professional workshops that already have access to compressed air.
+        </p>
+      </div>
+
+      <div class="grid-3">
+
+        <article class="card">
+          <h3>Less Manual Effort</h3>
+          <p>
+            Pneumatic actuation is intended to reduce the physical effort
+            required to operate the jack.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Workshop Friendly</h3>
+          <p>
+            Designed with automotive service environments in mind, where
+            compressed-air infrastructure may already be available.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Simple Operator Control</h3>
+          <p>
+            Electrical control of the solenoid valve provides a straightforward
+            interface for the pneumatic system.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="applications" class="light">
+    <div class="container">
+      <div class="section-head">
+        <h2>Designed for Automotive Professionals</h2>
+        <p>
+          AutoLift is positioned for businesses and professionals involved in
+          vehicle maintenance and service.
+        </p>
+      </div>
+
+      <div class="application-list">
+        <div class="application">Auto Repair Shops</div>
+        <div class="application">Garages</div>
+        <div class="application">Tire Service</div>
+        <div class="application">Service Stations</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <h2>How the System Works</h2>
+        <p>
+          Compressed air is directed through the pneumatic control system to
+          the actuator. The pneumatic cylinder converts air pressure into
+          linear force, which is transferred through the mechanical lifting
+          structure to raise the supported vehicle.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card">
+          <div class="icon">01</div>
+          <h3>Connect Air</h3>
+          <p>Connect the jack to a suitable compressed-air supply and regulated pneumatic circuit.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">02</div>
+          <h3>Activate Control</h3>
+          <p>The operator activates the electrical control, commanding the solenoid valve.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">03</div>
+          <h3>Lift</h3>
+          <p>The pneumatic cylinder generates lifting force through the mechanical jack structure.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="container">
+      <h2>Interested in AutoLift?</h2>
+      <p>
+        Contact us for product information, design discussions, partnership
+        opportunities, or future availability.
+      </p>
+
+      <!-- Replace this form action with your real form-processing URL before publishing. -->
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <input type="text" name="company" placeholder="Company / Workshop">
+        <textarea name="message" placeholder="How can we help?"></textarea>
+        <button class="btn btn-primary" type="submit">Send Inquiry</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div><strong>AutoLift Pneumatic Jack</strong></div>
+    <div>8-Ton Automated Pneumatic Vehicle Lifting</div>
+    <div>© 2026 AutoLift. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
